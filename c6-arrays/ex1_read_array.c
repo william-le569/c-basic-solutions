@@ -10,18 +10,16 @@
 //  update for chapter 3 :
 // sentinel : sentinel value must be chosen so that it cannot be confused with an acceptable input value.
 // using top-down, Stepwise refinement to solve problems
+
+//  pseudocode : 
+// reading an in-file-array
+// initialize an array
+// loop through
+// print out
 int main() {
-    int integer1;
-    int integer2;
-    int sum;
-
-    printf("Enter the first integer\n");
-    scanf("%d", &integer1);
-
-    printf("Enter the second integer\n");
-    scanf("%d", &integer2);
-
-    sum = integer1 + integer2;
-
-    printf("Sum is %d\n", sum);
+    int array[10]={1,2,3,4,5,6,7,8,9,10};
+    printf("\t%s\t%s\n","Order","Value");
+    for(int i=0; i<10; i++) {
+        printf("\t%d.\t%d\n",i,array[i]);
+    }
 } // end fucntion main

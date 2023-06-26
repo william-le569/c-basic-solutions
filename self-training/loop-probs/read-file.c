@@ -10,18 +10,15 @@
 //  update for chapter 3 :
 // sentinel : sentinel value must be chosen so that it cannot be confused with an acceptable input value.
 // using top-down, Stepwise refinement to solve problems
+
+// top-down, stepwise refinement
+// open a file
+// read its data into a array
+// print data.
+// close file
+
+
 int main() {
-    int integer1;
-    int integer2;
-    int sum;
 
-    printf("Enter the first integer\n");
-    scanf("%d", &integer1);
-
-    printf("Enter the second integer\n");
-    scanf("%d", &integer2);
-
-    sum = integer1 + integer2;
-
-    printf("Sum is %d\n", sum);
+    printf("Sum is %d\n", EOF);
 } // end fucntion main
