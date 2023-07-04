@@ -1,4 +1,3 @@
-#include <stdio.h>
 //instructions : f in printf and scanf stands for formatted
 //scanf: the function reads from the standard input, usually the keyboard.
 // %d : convention specifier
@@ -11,19 +10,31 @@
 // sentinel : sentinel value must be chosen so that it cannot be confused with an acceptable input value.
 // using top-down, Stepwise refinement to solve problems
 
-//  pseudocode : 
-// reading an in-file-array
-// initialize an array
-// loop through
-// print out
+// input : read side of square ::
+//      :: cin > size
+// output print that square out
+// condition side between 1 and 20
+
+#include <stdio.h>
+
 int main() {
-    int array[11]={1,2,3,4,5,6,7,8,9,11,10};
-    printf("\t%s\t%s\n","Order","Value");
-    for(int i=0; i<10; i++) {
-        printf("\t%d.\t%d\n",i,array[i]);
-    }
+    int s;
+    int i=0;
+    int j=0;
+    scanf("%d",&s);
+    while(i<s) {
+        while(j<s) {
+            if(i==0 || i==s-1 || j==0 ||j==s-1) {
+                printf("*");
+            }
+            else printf(" ");
+            j++;
+        }
+        printf("\n");
+        j=0; // restart state of j
+        i++;
+    } 
+    j=0;
 
-    int size = sizeof(array)/sizeof(int);
-
-    printf("\nThe%d\t%d\n",size,array[size/2]);
-} // end fucntion main
+    return 0;
+}
